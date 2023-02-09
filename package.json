@@ -21,6 +21,22 @@
       }
     ]
   },
+  "configuration": [
+    {
+      "additionalProperties": false,
+      "order": 0,
+      "properties": {
+        "openDist.enabled": {
+          "default": true,
+          "description": "Enable / Disable open dist folder.",
+          "scope": "resource",
+          "type": "boolean"
+        }
+      },
+      "title": "open dist folder",
+      "type": "object"
+    }
+  ],
   "scripts": {
     "vscode:prepublish": "pnpm run package",
     "compile": "webpack",
@@ -47,8 +63,5 @@
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "@vscode/test-electron": "^2.2.2"
-  },
-  "dependencies": {
-    "child_process": "^1.0.2"
   }
 }
